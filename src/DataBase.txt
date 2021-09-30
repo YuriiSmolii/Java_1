@@ -1,0 +1,12 @@
+Item;MacBook;Apple;40000;
+Item;Iphone;Apple;25000;
+Item;Ipad;Apple;33000;
+Item;AirPods;Apple;3500;
+CommonItem;Milk;Farm;40;7;1000;
+CommonItem;Butter;Farm;80;7;250;
+CommonItem;Bread;Factory№5;20;14;300;
+CommonItem;Yogurt;Molokia;35;14;500;
+WearItem;T-shirt;Levis;5000;cotton;M;
+WearItem;Panama;Balensiaga;500;jeans;L;
+WearItem;Sneakers;Converse;5000;leather;42;
+WearItem;Dress;Zara;15000;Polyester;S;
