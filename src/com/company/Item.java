@@ -38,6 +38,6 @@ public class Item implements Comparable<Item>{
     }
     @Override
     public int compareTo(Item compareItem) {
-        return Float.compare(compareItem.getPrice(), compareItem.price);
+        return Float.compare(compareItem.getPrice(), this.price);
     }
 }

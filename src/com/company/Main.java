@@ -57,13 +57,13 @@ public class Main {
                 return false;
             }
         }
-        //System.out.println( num + " - is prime");
+        System.out.println( num + " - is prime");
         return true;
     }
 
     public static List<Integer> maxPrimeColumn(int[][] num, int rows, int columns)
     {
-        int maxColumn = 0;
+        int maxColumn = -1;
         List<Integer> res = new ArrayList<Integer>();
 
         for(int b = 0; b < columns; b++)
@@ -73,10 +73,6 @@ public class Main {
                 if(isPrime(num[a][b]) && num[a][b]>maxColumn)
                 {
                     maxColumn = num[a][b];
-                }
-                else
-                {
-                    maxColumn = -1;
                 }
             }
             res.add(maxColumn);
@@ -148,7 +144,7 @@ public class Main {
         printStringArray(result);
     }
 
-    public static void readFromFile(Scanner scan, String filePath, ArrayList<Item> items)
+    public static void readFromFile(String filePath, ArrayList<Item> items)
     {
         try {
             var fileIn = new Scanner(new File(filePath)).useDelimiter("\n");
@@ -248,7 +244,7 @@ public class Main {
 
         var items = new ArrayList<Item>();
 
-        readFromFile(sc, filePath, items);
+        readFromFile(filePath, items);
         System.out.println("Read classes: ");
         printClasses(items);
         sortByPrice(items);
